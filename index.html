@@ -48,39 +48,45 @@
   </p>
 
   <h2>Post-Workload Music Summaries</h2>
+  <p>
+    In these files, tempo comes from phase, scale type comes from mode, and
+    melody direction comes from confidence. Fast tempo indicates sequential
+    behavior; slow tempo indicates irregular behavior.
+  </p>
   <table>
     <thead>
       <tr>
         <th>Mode</th>
         <th>Workload</th>
+        <th>What to hear</th>
         <th>Audio</th>
       </tr>
     </thead>
     <tbody>
-      <tr><td>adaptive</td><td>sequential</td><td><audio controls src="Post%20workloads/adaptive_sequential.wav"></audio></td></tr>
-      <tr><td>adaptive</td><td>random</td><td><audio controls src="Post%20workloads/adaptive_random.wav"></audio></td></tr>
-      <tr><td>adaptive</td><td>phase_change</td><td><audio controls src="Post%20workloads/adaptive_phase_change.wav"></audio></td></tr>
-      <tr><td>adaptive</td><td>gradual_drift</td><td><audio controls src="Post%20workloads/adaptive_gradual_drift.wav"></audio></td></tr>
-      <tr><td>adaptive</td><td>seek_suppression</td><td><audio controls src="Post%20workloads/adaptive_seek_suppression.wav"></audio></td></tr>
-      <tr><td>adaptive</td><td>tar_workload</td><td><audio controls src="Post%20workloads/adaptive_tar_workload.wav"></audio></td></tr>
-      <tr><td>adaptive</td><td>python_import</td><td><audio controls src="Post%20workloads/adaptive_python_import.wav"></audio></td></tr>
-      <tr><td>adaptive</td><td>cache_lookup_workload</td><td><audio controls src="Post%20workloads/adaptive_cache_lookup_workload.wav"></audio></td></tr>
-      <tr><td>baseline</td><td>sequential</td><td><audio controls src="Post%20workloads/baseline_sequential.wav"></audio></td></tr>
-      <tr><td>baseline</td><td>random</td><td><audio controls src="Post%20workloads/baseline_random.wav"></audio></td></tr>
-      <tr><td>baseline</td><td>phase_change</td><td><audio controls src="Post%20workloads/baseline_phase_change.wav"></audio></td></tr>
-      <tr><td>baseline</td><td>gradual_drift</td><td><audio controls src="Post%20workloads/baseline_gradual_drift.wav"></audio></td></tr>
-      <tr><td>baseline</td><td>seek_suppression</td><td><audio controls src="Post%20workloads/baseline_seek_suppression.wav"></audio></td></tr>
-      <tr><td>baseline</td><td>tar_workload</td><td><audio controls src="Post%20workloads/baseline_tar_workload.wav"></audio></td></tr>
-      <tr><td>baseline</td><td>python_import</td><td><audio controls src="Post%20workloads/baseline_python_import.wav"></audio></td></tr>
-      <tr><td>baseline</td><td>cache_lookup_workload</td><td><audio controls src="Post%20workloads/baseline_cache_lookup_workload.wav"></audio></td></tr>
-      <tr><td>none</td><td>sequential</td><td><audio controls src="Post%20workloads/none_sequential.wav"></audio></td></tr>
-      <tr><td>none</td><td>random</td><td><audio controls src="Post%20workloads/none_random.wav"></audio></td></tr>
-      <tr><td>none</td><td>phase_change</td><td><audio controls src="Post%20workloads/none_phase_change.wav"></audio></td></tr>
-      <tr><td>none</td><td>gradual_drift</td><td><audio controls src="Post%20workloads/none_gradual_drift.wav"></audio></td></tr>
-      <tr><td>none</td><td>seek_suppression</td><td><audio controls src="Post%20workloads/none_seek_suppression.wav"></audio></td></tr>
-      <tr><td>none</td><td>tar_workload</td><td><audio controls src="Post%20workloads/none_tar_workload.wav"></audio></td></tr>
-      <tr><td>none</td><td>python_import</td><td><audio controls src="Post%20workloads/none_python_import.wav"></audio></td></tr>
-      <tr><td>none</td><td>cache_lookup_workload</td><td><audio controls src="Post%20workloads/none_cache_lookup_workload.wav"></audio></td></tr>
+      <tr><td>adaptive</td><td>sequential</td><td>fast; harmonic minor; melody moves up.</td><td><audio controls src="Post%20workloads/adaptive_sequential.wav"></audio></td></tr>
+      <tr><td>adaptive</td><td>random</td><td>slow; harmonic minor; melody moves down.</td><td><audio controls src="Post%20workloads/adaptive_random.wav"></audio></td></tr>
+      <tr><td>adaptive</td><td>phase_change</td><td>fast &rarr; slow &rarr; fast; harmonic minor; melody moves up.</td><td><audio controls src="Post%20workloads/adaptive_phase_change.wav"></audio></td></tr>
+      <tr><td>adaptive</td><td>gradual_drift</td><td>fast; harmonic minor; melody moves up.</td><td><audio controls src="Post%20workloads/adaptive_gradual_drift.wav"></audio></td></tr>
+      <tr><td>adaptive</td><td>seek_suppression</td><td>fast &rarr; slow; harmonic minor; melody moves up.</td><td><audio controls src="Post%20workloads/adaptive_seek_suppression.wav"></audio></td></tr>
+      <tr><td>adaptive</td><td>tar_workload</td><td>fast; harmonic minor; melody moves up.</td><td><audio controls src="Post%20workloads/adaptive_tar_workload.wav"></audio></td></tr>
+      <tr><td>adaptive</td><td>python_import</td><td>fast &rarr; slow; harmonic minor; melody moves up.</td><td><audio controls src="Post%20workloads/adaptive_python_import.wav"></audio></td></tr>
+      <tr><td>adaptive</td><td>cache_lookup_workload</td><td>fast &rarr; slow; harmonic minor; melody moves down.</td><td><audio controls src="Post%20workloads/adaptive_cache_lookup_workload.wav"></audio></td></tr>
+      <tr><td>baseline</td><td>sequential</td><td>fast; natural minor; melody moves up.</td><td><audio controls src="Post%20workloads/baseline_sequential.wav"></audio></td></tr>
+      <tr><td>baseline</td><td>random</td><td>slow; natural minor; melody moves down.</td><td><audio controls src="Post%20workloads/baseline_random.wav"></audio></td></tr>
+      <tr><td>baseline</td><td>phase_change</td><td>fast &rarr; slow &rarr; fast; natural minor; melody moves up.</td><td><audio controls src="Post%20workloads/baseline_phase_change.wav"></audio></td></tr>
+      <tr><td>baseline</td><td>gradual_drift</td><td>fast; natural minor; melody moves up.</td><td><audio controls src="Post%20workloads/baseline_gradual_drift.wav"></audio></td></tr>
+      <tr><td>baseline</td><td>seek_suppression</td><td>fast &rarr; slow; natural minor; melody moves up.</td><td><audio controls src="Post%20workloads/baseline_seek_suppression.wav"></audio></td></tr>
+      <tr><td>baseline</td><td>tar_workload</td><td>fast; natural minor; melody moves up.</td><td><audio controls src="Post%20workloads/baseline_tar_workload.wav"></audio></td></tr>
+      <tr><td>baseline</td><td>python_import</td><td>fast &rarr; slow; natural minor; melody moves up.</td><td><audio controls src="Post%20workloads/baseline_python_import.wav"></audio></td></tr>
+      <tr><td>baseline</td><td>cache_lookup_workload</td><td>fast &rarr; slow; natural minor; melody moves down.</td><td><audio controls src="Post%20workloads/baseline_cache_lookup_workload.wav"></audio></td></tr>
+      <tr><td>none</td><td>sequential</td><td>fast; major; melody moves up.</td><td><audio controls src="Post%20workloads/none_sequential.wav"></audio></td></tr>
+      <tr><td>none</td><td>random</td><td>slow; major; melody moves down.</td><td><audio controls src="Post%20workloads/none_random.wav"></audio></td></tr>
+      <tr><td>none</td><td>phase_change</td><td>fast &rarr; slow &rarr; fast; major; melody moves up.</td><td><audio controls src="Post%20workloads/none_phase_change.wav"></audio></td></tr>
+      <tr><td>none</td><td>gradual_drift</td><td>fast; major; melody moves up.</td><td><audio controls src="Post%20workloads/none_gradual_drift.wav"></audio></td></tr>
+      <tr><td>none</td><td>seek_suppression</td><td>fast &rarr; slow; major; melody moves up.</td><td><audio controls src="Post%20workloads/none_seek_suppression.wav"></audio></td></tr>
+      <tr><td>none</td><td>tar_workload</td><td>fast; major; melody moves up.</td><td><audio controls src="Post%20workloads/none_tar_workload.wav"></audio></td></tr>
+      <tr><td>none</td><td>python_import</td><td>fast &rarr; slow; major; melody moves up.</td><td><audio controls src="Post%20workloads/none_python_import.wav"></audio></td></tr>
+      <tr><td>none</td><td>cache_lookup_workload</td><td>fast &rarr; slow; major; melody moves down.</td><td><audio controls src="Post%20workloads/none_cache_lookup_workload.wav"></audio></td></tr>
     </tbody>
   </table>
 
@@ -88,7 +94,8 @@
   <p>
     These files use the same mapping shown in Figure 5.9 of the thesis:
     contiguous reads are silent, and nonzero seek distances become short tones
-    between 150 Hz and 1800 Hz.
+    between 150 Hz and 1800 Hz. Small nonzero seeks produce lower tones, while
+    larger offset jumps produce higher tones.
   </p>
 
   <table>
@@ -96,18 +103,19 @@
       <tr>
         <th>Mode</th>
         <th>Workload</th>
+        <th>What to hear</th>
         <th>Seek-Tone Audio</th>
       </tr>
     </thead>
     <tbody>
-      <tr><td>adaptive</td><td>sequential</td><td><audio controls src="seek_tones/adaptive_sequential_seek_tones.wav"></audio></td></tr>
-      <tr><td>adaptive</td><td>random</td><td><audio controls src="seek_tones/adaptive_random_seek_tones.wav"></audio></td></tr>
-      <tr><td>adaptive</td><td>phase_change</td><td><audio controls src="seek_tones/adaptive_phase_change_seek_tones.wav"></audio></td></tr>
-      <tr><td>adaptive</td><td>gradual_drift</td><td><audio controls src="seek_tones/adaptive_gradual_drift_seek_tones.wav"></audio></td></tr>
-      <tr><td>adaptive</td><td>seek_suppression</td><td><audio controls src="seek_tones/adaptive_seek_suppression_seek_tones.wav"></audio></td></tr>
-      <tr><td>adaptive</td><td>tar_workload</td><td><audio controls src="seek_tones/adaptive_tar_workload_seek_tones.wav"></audio></td></tr>
-      <tr><td>adaptive</td><td>python_import</td><td><audio controls src="seek_tones/adaptive_python_import_seek_tones.wav"></audio></td></tr>
-      <tr><td>adaptive</td><td>cache_lookup_workload</td><td><audio controls src="seek_tones/adaptive_cache_lookup_workload_seek_tones.wav"></audio></td></tr>
+      <tr><td>adaptive</td><td>sequential</td><td>Mostly silent. Contiguous reads have zero seek distance.</td><td><audio controls src="seek_tones/adaptive_sequential_seek_tones.wav"></audio></td></tr>
+      <tr><td>adaptive</td><td>random</td><td>Scattered uneven tones from random offset jumps.</td><td><audio controls src="seek_tones/adaptive_random_seek_tones.wav"></audio></td></tr>
+      <tr><td>adaptive</td><td>phase_change</td><td>Quiet sequential sections, an active random middle, then quieter again.</td><td><audio controls src="seek_tones/adaptive_phase_change_seek_tones.wav"></audio></td></tr>
+      <tr><td>adaptive</td><td>gradual_drift</td><td>May be silent or nearly silent when the logged seek deltas are zero.</td><td><audio controls src="seek_tones/adaptive_gradual_drift_seek_tones.wav"></audio></td></tr>
+      <tr><td>adaptive</td><td>seek_suppression</td><td>Sparse but noticeable tones from larger jumps.</td><td><audio controls src="seek_tones/adaptive_seek_suppression_seek_tones.wav"></audio></td></tr>
+      <tr><td>adaptive</td><td>tar_workload</td><td>Mostly silent because archive-style traversal is regular.</td><td><audio controls src="seek_tones/adaptive_tar_workload_seek_tones.wav"></audio></td></tr>
+      <tr><td>adaptive</td><td>python_import</td><td>Mixed scattered tones from moving across many small files.</td><td><audio controls src="seek_tones/adaptive_python_import_seek_tones.wav"></audio></td></tr>
+      <tr><td>adaptive</td><td>cache_lookup_workload</td><td>Frequent audible tones from lookup-style offset jumps.</td><td><audio controls src="seek_tones/adaptive_cache_lookup_workload_seek_tones.wav"></audio></td></tr>
     </tbody>
   </table>
 </body>
