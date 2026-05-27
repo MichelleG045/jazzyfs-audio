@@ -2,13 +2,30 @@
 
 This repository contains the audio examples for the thesis *JazzyFS: Adaptive File Prefetching with Runtime Suppression Signals and Sonification*.
 
-The files are generated from macOS/APFS JazzyFS decision logs and are provided so readers can listen to the sonification outputs discussed in Chapter 5 and Appendix A of the thesis.
+Listen online here:
+
+<https://michelleg045.github.io/jazzyfs-audio/>
+
+The audio files were generated from macOS/APFS JazzyFS decision logs. They are provided so readers can listen to the sonification outputs discussed in Chapter 5 and Appendix A of the thesis.
 
 ## Contents
 
-- `Post workloads/`: post-workload musical summaries for each workload and mode.
-- `seek_tones/`: adaptive-mode seek-tone examples for each workload.
-- `index.html`: a browser page with embedded audio players for all examples.
+- `Post workloads/`: 24 post-workload musical summaries, covering 8 workloads across 3 modes.
+- `seek_tones/`: 8 adaptive-mode seek-tone examples, one per workload.
+- `index.html`: a browser page with embedded audio players and listening-guide tables.
+
+## Workloads
+
+The archive includes these workloads:
+
+- `sequential`
+- `random`
+- `phase_change`
+- `gradual_drift`
+- `seek_suppression`
+- `tar_workload`
+- `python_import`
+- `cache_lookup_workload`
 
 ## Post-Workload Summaries
 
@@ -20,7 +37,7 @@ Modes map to scale quality:
 - `baseline`: natural minor scale
 - `adaptive`: harmonic minor scale
 
-The workload phase controls tempo. Sequential phases use faster tempo, and irregular phases use slower tempo. Confidence controls whether the melody moves upward or downward.
+Workload phase controls tempo. Sequential phases use faster tempo, and irregular phases use slower tempo. Confidence controls whether the melody moves upward or downward. The root note can come from the natural-note set A through G.
 
 ## Seek-Tone Examples
 
@@ -32,6 +49,6 @@ Seek-tone files use adaptive-mode decision logs. They map seek distance to short
 
 These files correspond to the real-time seek sonification mapping described in the thesis.
 
-## Listening
+## Listening Guide
 
-Open the GitHub Pages site for this repository, or open `index.html` locally in a browser.
+The web page includes a `What to hear` column for every audio file. For post-workload summaries, it lists the tempo pattern, scale type, and melody direction. For seek-tone examples, it describes the expected silence, scattered tones, or frequent tones for each workload.
